@@ -45,12 +45,14 @@ nav button {
 
 header {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     text-align: center;
     background-color: #540B51;
     color: white;
     padding: 0 1em;
+    max-height: 170vw;
+    overflow: hidden;
 }
 
 header h1 {
@@ -71,6 +73,10 @@ header #sign-up-btn-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+}
+
+header .screenshot img {
+    max-width: 155%;
 }
 
 .big-btn {
