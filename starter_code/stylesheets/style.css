@@ -113,3 +113,37 @@ header .screenshot img {
     border-radius: 0.1em;
     padding: 0.5em 0.6em;
 }
+
+main {
+    background-color: #F3EAE2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+main #references {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2em;
+}
+
+main #references p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+    margin: 1em 0;
+}
+
+main #references .logo-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main #references img {
+    height: 2rem;
+    width: auto;
+    margin: 1em 0;
+}
