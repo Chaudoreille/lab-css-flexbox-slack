@@ -25,8 +25,8 @@
   <body>
     <nav>
       <div>
-        <img src="./images/slack-logo.png" alt="Slack logo" />
-        <ul>
+        <img src="./images/slack-logo.png" alt="Slack logo" class="logo" />
+        <ul id="main-menu">
           <li>
             <a href="#">Product</a>
           </li>
@@ -42,12 +42,12 @@
         </ul>
       </div>
 
-      <div>
-        <button>
+      <div class="button-container">
+        <button id="search-button">
           <img src="./images/icon-search.png" alt="Search icon" />
         </button>
 
-        <button>
+        <button id="burger-menu-button">
           <img src="./images/icon-menu.png" alt="Menu icon" />
         </button>
 
@@ -63,16 +63,20 @@
     </nav>
 
     <header>
-      <div>
+      <div id="sign-up-section">
         <h1>Great teamwork starts with a digital HQ</h1>
 
-        <p>Slack is free to try for as long as you'd like.</p>
+        <p><em>Slack is free to try</em> for as long as you'd like.</p>
 
-        <div>
-          <button>Sign up with email</button>
+        <div id="sign-up-btn-container">
+          <button class="big-btn with-email">Sign up with email</button>
 
-          <button>
-            <img src="./images/logo-google.png" alt="Google logo" />
+          <button class="big-btn with-google">
+            <img
+              src="./images/logo-google.png"
+              alt="Google logo"
+              class="google-logo"
+            />
             <span>Sign up with Google</span>
           </button>
         </div>
