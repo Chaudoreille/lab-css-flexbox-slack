@@ -67,6 +67,11 @@ header h1 {
     font-size: 2.4em;
 }
 
+header #sign-up-section {
+    width: 100%;
+    max-width: 500px;
+}
+
 #sign-up-section > * {
     margin: 1rem 0;
 }
@@ -75,6 +80,9 @@ header em {
     font-style: normal;
     color: #ECB12F;
     font-weight: 600;
+}
+
+header .screenshot {
 }
 
 header .screenshot img {
@@ -104,12 +112,14 @@ header .screenshot img {
     position: relative;
     background-color: white;
     color: #540B51;
+    width: 100%;
 }
 
 .big-btn.with-google {
     position: relative;
     background-color: #4285F4;
     color: white;
+    width: 100%;
 }
 
 .big-btn.with-google .google-logo {
