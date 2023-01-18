@@ -18,7 +18,7 @@ footer links grey: #454245
 }
 
 nav {
-    background-color: #540b54;
+    background-color: #540B51;
     padding: 1rem;
     display: flex;
     flex-flow: row nowrap;
@@ -50,7 +50,7 @@ header {
     text-align: center;
     background-color: #540B51;
     color: white;
-    padding: 0 1em;
+    padding: 0 1rem;
     max-height: 170vw;
     overflow: hidden;
 }
@@ -69,14 +69,14 @@ header em {
     font-weight: 600;
 }
 
-header #sign-up-btn-container {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-}
-
 header .screenshot img {
     max-width: 155%;
+}
+
+.big-up-btn-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
 .big-btn {
@@ -89,6 +89,7 @@ header .screenshot img {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
+    width: 25rem;
 }
 
 .big-btn.with-email {
@@ -96,7 +97,6 @@ header .screenshot img {
     background-color: white;
     color: #540B51;
 }
-
 
 .big-btn.with-google {
     position: relative;
@@ -119,6 +119,11 @@ main {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+}
+
+main h2,
+main h3 {
+    font-size: 1.9rem;
 }
 
 main #references {
@@ -173,10 +178,6 @@ main .selling-point .text-container {
     margin: 1.5rem 0;
 }
 
-main .selling-point .text-container h2 {
-    font-size: 1.9em;
-}
-
 main .selling-point .text-container p {
     margin: 1rem 0;
 }
@@ -188,4 +189,47 @@ main .selling-point .text-container a {
     background-repeat: no-repeat;
     background-position: right;
     padding-right: 25px;
+}
+
+main #enterprise {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+main #enterprise > * {
+    margin: .3rem 0;
+}
+
+.btn-purple-on-white {
+    border: 1px solid;
+    border-color: #540B51;
+    background-color: white;
+    color: #540B51;
+}
+
+.btn-white-on-purple {
+    border-color: white;
+    background-color: #540B51;
+    color: white;
+}
+
+main #enterprise .stats li p.huge {
+    font-size: 3rem;
+    color: #540B51;
+}
+
+main #enterprise .stats {
+    list-style: none;
+    font-weight: 700;
+}
+
+main #enterprise .stats li {
+    width: 11rem;
+    margin: 2rem 0;
 }
