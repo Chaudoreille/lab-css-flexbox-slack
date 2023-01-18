@@ -140,10 +140,52 @@ main #references .logo-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 main #references img {
     height: 2rem;
     width: auto;
     margin: 1em 0;
+}
+
+main #references .logo-container .bigger {
+    height: 3rem;
+}
+
+main #references .logo-container .smaller {
+    height: 1.5rem;
+}
+
+main .selling-point {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main .selling-point .image-container {
+    order: 0;
+}
+
+main .selling-point .text-container {
+    order: 1;
+    padding: 1rem;
+    font-size: .9rem;
+    margin: 1.5rem 0;
+}
+
+main .selling-point .text-container h2 {
+    font-size: 1.9em;
+}
+
+main .selling-point .text-container p {
+    margin: 1rem 0;
+}
+
+main .selling-point .text-container a {
+    text-decoration: none;
+    color: #2E71A6;
+    background-image: url("../images/icon-arrow-right.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 25px;
 }
