@@ -17,13 +17,23 @@ footer links grey: #454245
     font-family: "Noto Sans Display";
 }
 
-nav {
+.purple-bg {
     background-color: #540B51;
-    padding: 1rem;
+    color: white;
+}
+
+header,
+.text-container,
+#digital-hq {
+    padding: 0 1rem;
+}
+
+nav {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 nav .logo {
@@ -48,9 +58,6 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     text-align: center;
-    background-color: #540B51;
-    color: white;
-    padding: 0 1rem;
     max-height: 170vw;
     overflow: hidden;
 }
@@ -171,9 +178,17 @@ main .selling-point .image-container {
     order: 0;
 }
 
+main .selling-point .image-container:nth-child(even) {
+    padding-left: 1rem;
+}
+
+main .selling-point .image-container:nth-child(odd) {
+    padding-right: 1rem;
+}
+
+
 main .selling-point .text-container {
     order: 1;
-    padding: 1rem;
     font-size: .9rem;
     margin: 1.5rem 0;
 }
@@ -214,6 +229,7 @@ main #enterprise > * {
 }
 
 .btn-white-on-purple {
+    border: 1px solid;
     border-color: white;
     background-color: #540B51;
     color: white;
@@ -232,4 +248,14 @@ main #enterprise .stats {
 main #enterprise .stats li {
     width: 11rem;
     margin: 2rem 0;
+}
+
+main #digital-hq h3 {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+main #digital-hq {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
