@@ -82,9 +82,6 @@ header em {
     font-weight: 600;
 }
 
-header .screenshot {
-}
-
 header .screenshot img {
     max-width: 155%;
 }
@@ -135,7 +132,7 @@ header .screenshot img {
 main {
     background-color: #F3EAE2;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -146,7 +143,7 @@ main h3 {
 
 main #references {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
     padding: 2em;
@@ -183,10 +180,20 @@ main #references .logo-container .smaller {
 main .selling-point {
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+main .selling-point.reverse {
+    flex-direction: row-reverse;
 }
 
 main .selling-point .image-container {
     order: 0;
+}
+
+main .selling-point .image-container img {
+    max-height: 25rem;
 }
 
 main .selling-point .image-container:nth-child(even) {
@@ -197,11 +204,14 @@ main .selling-point .image-container:nth-child(odd) {
     padding-right: 1rem;
 }
 
-
 main .selling-point .text-container {
     order: 1;
     font-size: .9rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
+    max-width: 30rem;
+    min-width: 60%;
+    padding: 0 5%;
+    align-items: center;
 }
 
 main .selling-point .text-container p {
@@ -215,6 +225,39 @@ main .selling-point .text-container a {
     background-repeat: no-repeat;
     background-position: right;
     padding-right: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    main .selling-point .image-container img {
+        display: none;
+    }
+
+    main .selling-point .image-container:has(img[src="./images/connectedness-mobile.png"]) {
+        background-image: url("../images/connectedness.png");
+    }
+    main .selling-point .image-container:has(img[src="./images/flexibility-mobile.png"]) {
+        background-image: url("../images/flexibility.png");
+    }
+    main .selling-point .image-container:has(img[src="./images/speed-mobile.png"]) {
+        background-image: url("../images/speed.png");
+    }
+
+    main .selling-point .image-container {
+        background-size: contain;
+        background-position: left;
+        background-repeat:no-repeat;
+        background-size: contain;
+        width: 80%;
+        height: 22rem;
+    }
+    main .selling-point.reverse .image-container {
+        background-position: right;
+    }
+
+    main .selling-point .text-container {
+        flex-basis: 50%;
+        flex: 2;
+    }
 }
 
 main #enterprise {
@@ -261,14 +304,23 @@ main #enterprise .stats li {
     margin: 2rem 0;
 }
 
-main #digital-hq h3 {
-    margin: 1.5rem 0;
-    text-align: center;
-}
-
 main #digital-hq {
     padding-bottom: 2rem;
     padding-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main #digital-hq .big-btn {
+    margin: 0.5rem;
+}
+
+main #digital-hq h3 {
+    margin: 1.5rem 0;
+    text-align: center;
+    width: 100%;
 }
 
 footer {
